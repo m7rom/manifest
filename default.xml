@@ -13,6 +13,10 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
+  
+  <remote name="m7"
+        fetch="https://github.com/m7rom"
+        sync-j="16"/>
 
   <remote  name="github"
            fetch="http://github.com/" />
@@ -539,5 +543,19 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="DirtyUnicorns/arm-eabi-4.8" remote="github" revision="n" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="DirtyUnicorns/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="github" revision="n" />
 
+   <!-- Device -->
+
+    <project path="device/htc/m7" name="android_device_htc_m7" remote="m7" revision="" />
+    <project path="device/htc/m7-common" name="android_device_htc_m7-common" remote="m7" revision="" />
+
+    <!-- Kernel -->
+    <project path="kernel/htc/msm8960" name="android_kernel_htc_msm8960" remote="m7" revision="" />
+    <project path="kernel/htc/msm8960-common" name="android_kernel_htc_msm8960-common" remote="m7" revision="" />
+
+    <!-- Blobs -->
+    <project path="vendor/htc" name="proprietary_vendor_htc" remote="m7" revision="" />
+    <project path="vendor/qcom/binaries" name="proprietary_vendor_qcom_binaries" remote="m7" revision="" />
+    
+  
   <include name="cm.xml" />
 </manifest>
