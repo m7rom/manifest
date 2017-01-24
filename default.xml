@@ -550,7 +550,7 @@
 
     <!-- Kernel -->
     <project path="kernel/htc/msm8960" name="android_kernel_htc_msm8960" remote="m7" revision="cm-14.1" />
-    <project path="kernel/htc/msm8960-common" name="android_kernel_htc_msm8960-common" remote="m7" revision="cm-14.1" />
+    <project path="device/htc/msm8960-common" name="android_device_htc_msm8960-common" remote="m7" revision="cm-14.1" />
 
     <!-- Blobs -->
     <project path="vendor/htc" name="proprietary_vendor_htc" remote="m7" revision="cm-14.1" />
